@@ -14,6 +14,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.gitattributes = .gitattributes
 		.gitignore = .gitignore
 		README.md = README.md
+		saas-multi-tenant-app-database-per-tenant-pool-15.png = saas-multi-tenant-app-database-per-tenant-pool-15.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "media", "media", "{3BFDA89C-E8A0-4475-8FDB-9F9A878919D7}"
+	ProjectSection(SolutionItems) = preProject
+		media\saas-multi-tenant-app-database-per-tenant-pool-15.png = media\saas-multi-tenant-app-database-per-tenant-pool-15.png
 	EndProjectSection
 EndProject
 Global
@@ -37,6 +43,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3BFDA89C-E8A0-4475-8FDB-9F9A878919D7} = {C15E52D8-C839-4B1F-B6EA-A60D1B05B6FA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BBEBAAA4-A43F-4C64-A221-0935ECA3A1D7}
