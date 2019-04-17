@@ -1,0 +1,30 @@
+﻿@model List<MultiTenant.Common.Models.App.Donation>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="jumbotron">
+    @*<h1 class="display-4">Welcome</h1>
+        <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>*@
+    @Html.Raw(ViewBag.Body)
+</div>
+
+@if (User.Identity.IsAuthenticated) { 
+
+    <div>
+        <h2>@ViewBag.Title Data</h2>
+        <table class="table table-striped table-hover">
+            <tr>
+                <th>Name</th>
+                <th>Amount</th>
+            </tr>
+            @foreach (var donation in Model)
+            {
+                <tr>
+                    <td>@donation.Name</td>
+                    <td>@donation.Amount</td>
+                </tr>
+            }
+        </table>
+    </div>
+}
