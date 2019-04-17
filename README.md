@@ -31,7 +31,15 @@ Solution approach:
 
 ### Step 1
 
-Create a local sql database:
+Create a database:
+
+```sql
+create database ContosoExpensesdb;
+```
+
+### Step 2
+
+Create a catalog table:
 
 ```sql
 create table Catalog 
@@ -44,7 +52,9 @@ create table Catalog
 )
 ```
 
-### Step 2
+This table will be used to determine the database information after the user has logged in.
+
+### Step 3
 
 Create a a Catalog table:
 
@@ -59,7 +69,7 @@ create table Expense
 )
 ```
 
-### Step 3
+### Step 4
 
 Generate the self-signed certificates for each of the domains. In my case, I purchased eazuredemo1.com and azuredemo2.com.
 
